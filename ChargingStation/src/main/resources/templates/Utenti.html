@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco Utenti</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Elenco Utenti <a href="/ChargingStation/Welcome/Admin">Home</a></h2>
+
+<table id="utentiTable">
+    <thead>
+    <tr>
+        <th>Email</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Elimina</th>
+        <th>Abilita/Disabilita Account</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Dati verranno inseriti qui dinamicamente tramite JavaScript -->
+    </tbody>
+</table>
+
+<script src="/Utenti.js"></script>
+
+</body>
+</html>

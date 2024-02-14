@@ -1,0 +1,68 @@
+version: "3.8"
+
+services:
+  vault:
+    image: hashicorp/vault
+    command: ["/ssd/vault-init.sh"]
+    ports:
+      - "8200:8200"  
+    networks:
+      - mynet
+    cap_add:
+      - IPC_LOCK
+    secrets:
+      - unseal_key
+    volumes:
+      - ./vault:/ssd
+
+  keycloak:
+    image: mykeycloak
+    entrypoint: sh /keycloak-init.sh
+    ports:
+      - "8080:8080"
+    environment:
+      - PROXY_ADDRESS_FORWARDING=true 
+    networks:
+      - mynet
+    secrets:
+      - root_key
+    depends_on:
+      - vault
+  
+  nginx:
+    image: nginx
+    ports:
+      - "8443:8443"
+    command: ["/ssd/nginx-init.sh"]
+    networks:
+      - mynet
+    secrets:
+      - root_key
+    depends_on:
+      - vault
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/other:/ssd
+
+  spring:
+    image: springapp
+    ports:
+      - "8079:8079"
+    entrypoint: sh /spring-init.sh
+    networks:
+      - mynet
+    secrets:
+      - root_key
+    depends_on:
+      - vault
+      - nginx
+      - keycloak
+
+networks:
+  mynet:
+
+secrets:
+  unseal_key:
+    file: ./unseal_key.txt
+  root_key:
+    file: ./root_key.txt

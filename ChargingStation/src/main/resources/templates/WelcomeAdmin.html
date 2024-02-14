@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="it" data-page-type="welcome-admin">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mappa Colonnine Elettriche</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <style>
+        #map {
+            height: 690px;
+        }
+
+	    .navbar {
+	        background-color: #b2d3de;
+	        overflow: hidden;
+	        border-radius: 10px;
+	        margin-bottom: 1px;
+	        display: flex;
+	        flex-direction: column;
+	        align-items: center;
+	        justify-content: center;
+	        padding: 10px 0;
+	    }
+	
+	    .navbar h1 {
+	        margin: 0;
+	        color: #f2f2f2;
+	        text-align: center;
+	    }
+	
+	    .navbar-links {
+	        display: flex;
+	        flex-direction: row;
+	        margin-top: 10px;
+	    }
+	
+	    .navbar a {
+	        display: inline-block;
+	        color: #f2f2f2;
+	        text-align: center;
+	        padding: 14px 16px;
+	        text-decoration: none;
+	        border-radius: 1px;
+	        margin-right: 10px;
+	    }
+	    
+       	.form-column {
+	        width: 30%; /* Imposta la larghezza desiderata per le colonne */
+	        float: left; /* Dispone le colonne affiancate */
+	        box-sizing: border-box; /* Considera il padding e il bordo nel calcolo della larghezza */
+	        padding: 0 15px; /* Aggiunge spaziatura tra le colonne */
+	    }
+
+	    .form-column label {
+	        display: block;
+	        margin-bottom: 8px;
+	    }
+	
+	    .form-column input,
+	    .form-column select,
+	    .form-column button {
+	        width: 100%;
+	        padding: 10px;
+	        margin-bottom: 10px;
+	        box-sizing: border-box;
+	    }
+	    
+	    .campo-obbligatorio-vuoto {
+		    border: 1px solid red; /* Evidenzia il campo con un bordo rosso */
+		    background-color: #FFB6C1; /* Cambia il colore dello sfondo in rosa chiaro */
+		}
+		
+		.modal {
+		    display: none;
+		    position: fixed;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		    padding: 20px;
+		    text-align: center;
+		    max-width: 400px;
+		    z-index: 1000; /* Imposta uno z-index più alto */
+		}
+	
+		.modal-content {
+		  display: flex;
+		  flex-direction: column;
+		}
+		
+		.modal button {
+		  margin-top: 10px;
+		  padding: 10px;
+		  background-color: #007bff;
+		  color: #fff;
+		  border: none;
+		  cursor: pointer;
+		}
+		
+		.modal button:hover {
+		  background-color: #0056b3;
+		}	    		
+	    
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+    	<h1>Mappa Colonnine Elettriche</h1>
+	    <div class="navbar-links">
+	    	<a href="/ChargingStation/Welcome/Admin/InfoUtenti">Info Utenti</a>
+	    	<a id="eventsLink" href="/ChargingStation/Welcome/Admin/events">Events</a>	 	      
+	        <a href="#" id="logoutLink">Logout</a>	        
+    	</div>
+    </div>    
+
+    <div id="map"></div>
+    
+    <div>
+        <label for="provinceSelect">Seleziona provincia:</label>
+        <select id="provinceSelect">
+            <!-- Opzioni della dropdown verranno aggiunte dinamicamente -->
+        </select>
+		<button id="filterButton">Filtra per provincia</button>
+		<button id="resetButton">Reset Mappa</button>
+		<button id="aggiungiColonninaBtn">Aggiungi Colonnina</button>
+        
+    </div>
+        
+<div id="aggiuntaColonninaForm" style="display: none;">
+    <!-- Altri campi della colonnina -->
+    <div class="form-column">
+	    <label for="id">Id Colonnina:</label>
+	    <input type="number" id="IdColonnina" required>
+	    
+	    <label for="Provider">Nome Provider:</label>
+	    <input type="text" id="NameDataProvider">
+	
+	    <label for="URLProvider">URL Provider:</label>
+	    <input type="text" id="URLDataProvider">
+	    
+	    <label for="NameOperator">Nome Operatore:</label>
+	    <input type="text" id="NameOperatorInfo" required>
+	
+	    <label for="URLOperator">URL Operatore:</label>
+	    <input type="text" id="URLOperatorInfo">
+	    
+	    <label for="UsageType">Tipologia Utilizzo:</label>
+	    <input type="text" id="UsageType">
+	    
+	    <label for="Membership">Iscrizione Richiesta:</label>
+	    <input type="checkbox" id="MembershipRequired">
+	    
+	    <label for="Status">Stato:</label>
+	    <input type="checkbox" id="StatusType">
+	    
+	    <label for="MediaURL">Media URL:</label>
+	    <input type="text" id="MediaItemURL">
+	    
+	    <label for="Verified">Recentemente Verificata:</label>
+	    <input type="checkbox" id="RecentlyVerified">
+	    
+	    <label for="uuid">Uuid:</label>
+	    <input type="text" id="uuid">
+	    
+	    <label for="Cost">Costo:</label>
+	    <input type="text" id="UsageCost"> 
+	    
+	    <label for="NumberStation">Numero Di Colonnine:</label>
+	    <input type="number" id="NumberOfStation" required>                            
+	    
+	    <label for="LastUpdate">Data Ultimo Update:</label>
+	    <input type="text" id="DateLastStatusUpdate" required>
+	    
+	    <label for="DateCreated">Data Creazione:</label>
+	    <input type="text" id="DateCreated" required>
+    </div>
+
+    <!-- Campi relativi all'indirizzo -->
+    <div class="form-column">
+	    <label for="addressTitle">Titolo Indirizzo:</label>
+	    <input type="text" id="addressTitle" required>
+	
+	    <label for="addressLine">Indirizzo:</label>
+	    <input type="text" id="addressLine" required>
+	
+	    <label for="town">Città:</label>
+	    <input type="text" id="town" required>
+	
+	    <label for="stateProvince">Stato/Provincia:</label>
+	    <input type="text" id="stateProvince" required>
+	
+	    <label for="postCode">CAP:</label>
+	    <input type="text" id="postCode">
+	
+	    <label for="latitude">Latitudine:</label>
+	    <input type="number" step="any" id="latitude" required>
+	
+	    <label for="longitude">Longitudine:</label>
+	    <input type="number" step="any" id="longitude" required>
+	
+	    <label for="countryIsoCode">Codice ISO del Paese:</label>
+	    <input type="text" id="countryIsoCode">
+	
+	    <label for="continentCode">Codice Continente:</label>
+	    <input type="text" id="continentCode">
+    </div>
+
+    <!-- Campi relativi alle connessioni (lista) -->
+    <div id="connectionFields" class="form-column">
+        <label>Connessioni:</label>
+        <div class="connection-group" id="connection1">
+	       <label for="powerKW1">Potenza KW:</label>
+	       <input type="number" id="powerKW1">
+	       
+	       <label for="connectionType1">Tipo Connessione:</label>
+	       <input type="text" id="connectionType1">	                   
+	       
+	       <label for="FastChargeCapable1">Ricarica Veloce:</label>
+	       <input type="checkbox" id="FastChargeCapable1">
+	       
+	       <label for="NumberOfConnections1">Numero Connessioni:</label>
+	       <input type="number" id="NumberOfConnections1"> 
+        </div>
+
+        <!-- Additional connection groups can be dynamically added here -->
+    </div>
+    
+        <!-- Bottoni sotto la mappa -->
+    <div id="buttonsContainer" style="margin-top: 20px;">
+        <button id="AddConnectionBtn">Aggiungi Connessione</button>
+        <!-- Pulsante di conferma -->
+        <button id="ConfirmAddBtn">Conferma Aggiunta</button>
+        <!-- Pulsante di annulla -->
+        <button id="CancelBtn">Annulla</button>
+    </div>
+
+</div>
+
+<div id="LogoutModal" class="modal">
+  <div class="modal-content">
+    <p>Sei sicuro di voler effettuare il logout?</p>
+    <button id="confirmLogout">Conferma</button>
+    <button id="cancelLogout">Annulla</button>
+  </div>
+</div>    
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.17.15/lodash.js"></script>
+<script src="/script.js"></script>
+<script src="/WelcomeAdmin.js"></script>
+
+
+</body>
+</html>

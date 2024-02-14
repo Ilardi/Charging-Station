@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazioni Colonnina</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Prenotazioni per la colonnina con ID: <span id="idColonnina">{{idColonnina}}</span> <a href="/ChargingStation/Welcome/Admin">Home</a></h2>
+
+<table id="prenotazioniTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>ID Colonnina</th>
+        <th>ID Utente</th>
+        <th>Colonnina N.</th>
+        <th>Connessione N.</th>        
+        <th>Inizio</th>
+        <th>Fine</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Dati verranno inseriti qui dinamicamente tramite JavaScript -->
+    </tbody>
+</table>
+
+<script src="/PrenotazioniColonnina.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+-----------INSTALLAZIONE--------------
+- Generare i file localhost.crt e localhost.key con comando:
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout localhost.key -out localhost.crt -config .\certificate.config
+(nel file config bisogna aggiustare l'ultima riga con IP/dominio del server (diversa sintassi nei due casi, DNS. IP. = )).
+
+- Copiare localhost.crt nella cartella principale del progetto spring (RechargeStationBooking) e in ./nginx/other (su Windows).
+
+- Su spring correggere l'indirizzo IP/hostname del server keycloak nel file application.properties e compilare il progetto con: 
+mvn clean install
+
+- Buildare l'immagine springapp portandosi nella cartella del progetto con il comando:
+docker build . -t springapp 
+
+- Buildare l'immagine mykeycloak portandosi nella cartella ./keycloak con il comando:
+docker build . -t mykeycloak
+
+- A questo punto è possibile creare i container lanciando da questa cartella il comando:
+docker compose up -d
+
+-----------CONFIGURAZIONE--------------
+- Accedere ad http://vault:8200 e configurare vault, salvando root e unseal key in due file presenti in questa cartella chiamati root_key e unseal_key.
+Accedere a vault e creare un kv engine "secret", segreto "application", e inserire al suo interno le seguenti coppie chiave-valore:
+
+keycloak_admin
+keycloak_admin_password
+keycloak_client_secret
+private_key
+mongoDB_username
+mongoDB_password
+mail_username
+mail_password
+
+private_key sarebbe il contenuto del file localhost.key generato in precedenza. Il keycloak_client_secret invece verrà inserito in seguito.
+A questo punto bisogna CANCELLARE il container keycloak e rigenerarlo rilanciando nuovamente il comando: docker compose up -d
+
+- Accedere a http://keycloak:8080/keycloak . Accedere al pannello di controllo tramite le credenziali prima inserite e importare il realm ssd dal file realm-export.json . A questo punto bisogna:
+
+Rigenerare le credenziali per il client spring-application, inserendole poi in vault
+Sempre nel client spring-application è necessario cambiare l'ip/hostname in maniera corretta.
+Creare un utente admin, assegnandogli il ruolo e le credenziali
+Re-inserire la password dell'email nei realm settings
+Creare un oauth application su github e configurarla opportunamente, salvando il segreto e inserendolo in keycloak
+Nel realm "master" abilitare user e admin events.
+
+- Ri-avviare tutti i container e a questo punto se il porto 8443 è raggiungibile (eventualmente port forwarding se dietro NAT) dovrebbe funzionare
