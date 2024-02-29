@@ -1,0 +1,494 @@
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-09T17:29:10.628756Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-09T17:29:10.629195Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-09T17:29:10.629227Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-09T17:29:10.874517Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-09T17:29:10.874550Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:11.093910Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:43.161289Z"}
+{"@level":"info","@message":"seal configuration missing, not initialized","@module":"core","@timestamp":"2024-02-09T17:29:43.161342Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:44.300129Z"}
+{"@level":"info","@message":"seal configuration missing, not initialized","@module":"core","@timestamp":"2024-02-09T17:29:44.300202Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:44.300129Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:44.313293Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:44.313319Z"}
+{"@level":"info","@message":"seal configuration missing, not initialized","@module":"core","@timestamp":"2024-02-09T17:29:44.313372Z"}
+{"@level":"info","@message":"security barrier not initialized","@module":"core","@timestamp":"2024-02-09T17:29:50.079018Z"}
+{"@level":"info","@message":"security barrier initialized","@module":"core","@timestamp":"2024-02-09T17:29:50.080053Z","shares":1,"stored":1,"threshold":1}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-09T17:29:50.081070Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-09T17:29:50.089352Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-09T17:29:50.089415Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-09T17:29:50.089428Z","plugin-directory":""}
+{"@level":"info","@message":"no mounts; adding default mount table","@module":"core","@timestamp":"2024-02-09T17:29:50.089531Z"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:29:50.091455Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:29:50.092042Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:29:50.092459Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:29:50.094205Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-09T17:29:50.095426Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-09T17:29:50.098136Z"}
+{"@level":"info","@message":"Recorded vault version","@module":"core","@timestamp":"2024-02-09T17:29:50.098243Z","build date":"2023-12-04T17:45:28Z","upgrade time":"2024-02-09T17:29:50.098001882Z","vault version":"1.15.4"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-09T17:29:50.307510Z"}
+{"@level":"info","@message":"root token generated","@module":"core","@timestamp":"2024-02-09T17:29:50.307854Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-09T17:29:50.307873Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-09T17:29:50.308005Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-09T17:31:51.195422Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-09T17:31:51.195637Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-09T17:31:51.195821Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-09T17:31:51.196651Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-09T17:31:51.196699Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-09T17:31:51.196714Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:31:51.198241Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:31:51.198565Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:31:51.198654Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:31:51.200167Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-09T17:31:51.200616Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-09T17:31:51.201397Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-09T17:31:51.201949Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-09T17:31:51.201995Z"}
+{"@level":"info","@message":"successful mount","@module":"core","@timestamp":"2024-02-09T17:32:15.348360Z","namespace":"","path":"secret/","type":"kv","version":""}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-09T17:41:41.051149Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-09T17:41:41.051233Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-09T17:41:41.051461Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-09T17:41:41.051482Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-09T17:41:41.051487Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-09T17:41:44.104356Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-09T17:41:44.104531Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-09T17:41:44.104570Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-09T17:41:44.139794Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-09T17:41:44.139817Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-09T17:41:44.599190Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-09T17:41:44.599251Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-09T17:41:44.599307Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-09T17:41:44.599573Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-09T17:41:44.599590Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-09T17:41:44.599595Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:41:44.600295Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:41:44.600467Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:41:44.600648Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:41:44.600695Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T17:41:44.601390Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-09T17:41:44.601606Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-09T17:41:44.602927Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-09T17:41:44.604010Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-09T17:41:44.604035Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-09T17:46:18.360110Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-09T17:46:18.360159Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-09T17:46:18.360305Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-09T17:46:18.360321Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-09T17:46:18.360324Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-09T18:29:18.602451Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-09T18:29:18.602749Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-09T18:29:18.602774Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-09T18:29:18.882956Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-09T18:29:18.882977Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-09T18:29:19.063136Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-09T18:29:19.063203Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-09T18:29:19.063469Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-09T18:29:19.064093Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-09T18:29:19.064108Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-09T18:29:19.064112Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T18:29:19.065166Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T18:29:19.065321Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T18:29:19.065730Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T18:29:19.065765Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-09T18:29:19.067185Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-09T18:29:19.067534Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-09T18:29:19.068574Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-09T18:29:19.069569Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-09T18:29:19.069591Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-09T18:31:28.186623Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-09T18:31:28.186738Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-09T18:31:28.187003Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-09T18:31:28.187061Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-09T18:31:28.187073Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-10T08:34:21.602165Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-10T08:34:21.602926Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-10T08:34:21.602955Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-10T08:34:21.883175Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-10T08:34:21.883197Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-10T08:34:22.070102Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-10T08:34:22.070161Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-10T08:34:22.070438Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-10T08:34:22.071223Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-10T08:34:22.071241Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-10T08:34:22.071245Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T08:34:22.072453Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T08:34:22.072685Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T08:34:22.073361Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T08:34:22.073401Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T08:34:22.074804Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-10T08:34:22.075152Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-10T08:34:22.076260Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-10T08:34:22.077267Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-10T08:34:22.077289Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-10T09:02:26.848266Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-10T09:02:26.848307Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-10T09:02:26.848503Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-10T09:02:26.848518Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-10T09:02:26.848521Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-10T14:01:46.607544Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-10T14:01:46.608086Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-10T14:01:46.608116Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-10T14:01:46.855980Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-10T14:01:46.856002Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-10T14:01:47.112247Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-10T14:01:47.112304Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-10T14:01:47.112617Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-10T14:01:47.113652Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-10T14:01:47.113668Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-10T14:01:47.113672Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T14:01:47.114735Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T14:01:47.114885Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T14:01:47.115578Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T14:01:47.115623Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-10T14:01:47.117114Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-10T14:01:47.117466Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-10T14:01:47.120512Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-10T14:01:47.122943Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-10T14:01:47.122977Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-10T14:32:10.564808Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-10T14:32:10.564854Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-10T14:32:10.564994Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-10T14:32:10.565001Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-10T14:32:10.565003Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-11T09:31:04.101633Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-11T09:31:04.102162Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-11T09:31:04.102186Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-11T09:31:04.352472Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-11T09:31:04.352497Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-11T09:31:04.591180Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-11T09:31:04.591238Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-11T09:31:04.591529Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-11T09:31:04.592118Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-11T09:31:04.592135Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-11T09:31:04.592143Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T09:31:04.594079Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T09:31:04.594246Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T09:31:04.594563Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T09:31:04.594603Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T09:31:04.595976Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-11T09:31:04.596303Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-11T09:31:04.597311Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-11T09:31:04.597976Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-11T09:31:04.597997Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-11T10:01:40.123095Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-11T10:01:40.123146Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-11T10:01:40.123292Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-11T10:01:40.123307Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-11T10:01:40.123311Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-11T10:02:00.002234Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-11T10:02:00.002396Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-11T10:02:00.002439Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-11T10:02:00.037608Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-11T10:02:00.037632Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-11T10:02:00.499695Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-11T10:02:00.499758Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-11T10:02:00.499815Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-11T10:02:00.500080Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-11T10:02:00.500097Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-11T10:02:00.500104Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T10:02:00.500826Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T10:02:00.501010Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T10:02:00.501205Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T10:02:00.501247Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T10:02:00.502004Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-11T10:02:00.502667Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-11T10:02:00.503715Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-11T10:02:00.504042Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-11T10:02:00.504066Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-11T10:03:10.077833Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-11T10:03:10.077878Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-11T10:03:10.078013Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-11T10:03:10.078029Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-11T10:03:10.078033Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-11T20:40:07.159814Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-11T20:40:07.160687Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-11T20:40:07.160720Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-11T20:40:07.441728Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-11T20:40:07.441751Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-11T20:40:07.621078Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-11T20:40:07.621140Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-11T20:40:07.621345Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-11T20:40:07.622079Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-11T20:40:07.622101Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-11T20:40:07.622106Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T20:40:07.623077Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T20:40:07.623241Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T20:40:07.623837Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T20:40:07.623881Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-11T20:40:07.625249Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-11T20:40:07.625554Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-11T20:40:07.626722Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-11T20:40:07.627642Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-11T20:40:07.627665Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-11T20:53:03.268799Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-11T20:53:03.268862Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T08:42:58.597342Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T08:42:58.598391Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T08:42:58.598419Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T08:42:58.833411Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T08:42:58.833431Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T08:42:59.110732Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T08:42:59.110786Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T08:42:59.111418Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T08:42:59.112365Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T08:42:59.112383Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T08:42:59.112387Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:42:59.113431Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:42:59.113583Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:42:59.114323Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:42:59.114360Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:42:59.116043Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T08:42:59.116405Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T08:42:59.119859Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T08:42:59.121961Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T08:42:59.121985Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T08:49:45.040876Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T08:49:45.040927Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T08:49:45.041082Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T08:49:45.041090Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T08:49:45.041097Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T08:49:52.368205Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T08:49:52.368351Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T08:49:52.368387Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T08:49:52.397572Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T08:49:52.397593Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T08:49:52.885642Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T08:49:52.885716Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T08:49:52.885785Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T08:49:52.886045Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T08:49:52.886061Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T08:49:52.886066Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:49:52.886760Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:49:52.886923Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:49:52.887089Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:49:52.887125Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:49:52.887854Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T08:49:52.888070Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T08:49:52.889720Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T08:49:52.890028Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T08:49:52.890050Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T08:55:52.134613Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T08:55:52.134655Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T08:55:52.134803Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T08:55:52.134811Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T08:55:52.134814Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T08:56:03.388217Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T08:56:03.388342Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T08:56:03.388361Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T08:56:03.421393Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T08:56:03.421413Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T08:56:03.886956Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T08:56:03.887018Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T08:56:03.887073Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T08:56:03.887332Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T08:56:03.887348Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T08:56:03.887352Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:56:03.888015Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:56:03.888182Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:56:03.888353Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:56:03.888390Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T08:56:03.889478Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T08:56:03.889699Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T08:56:03.890132Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T08:56:03.890441Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T08:56:03.890464Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T09:09:51.617982Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T09:09:51.618018Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T09:09:51.618164Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T09:09:51.618179Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T09:09:51.618183Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T09:10:36.347088Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T09:10:36.347235Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T09:10:36.347262Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T09:10:36.379972Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T09:10:36.379995Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T09:10:36.896715Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T09:10:36.896780Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T09:10:36.896832Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T09:10:36.897113Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T09:10:36.897132Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T09:10:36.897137Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:10:36.897819Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:10:36.898004Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:10:36.898227Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:10:36.898273Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:10:36.899049Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T09:10:36.899871Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T09:10:36.900346Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T09:10:36.900629Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T09:10:36.900650Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T09:13:31.227331Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T09:13:31.227378Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T09:13:31.227539Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T09:13:31.227550Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T09:13:31.227554Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T09:13:33.804085Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T09:13:33.804223Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T09:13:33.804240Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T09:13:33.837368Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T09:13:33.837391Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T09:13:34.304955Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T09:13:34.305021Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T09:13:34.305074Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T09:13:34.305351Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T09:13:34.305368Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T09:13:34.305373Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:13:34.306099Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:13:34.306277Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:13:34.306465Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:13:34.306502Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:13:34.307262Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T09:13:34.307909Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T09:13:34.309041Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T09:13:34.309394Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T09:13:34.309416Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T09:29:28.239898Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T09:29:28.239945Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T09:29:28.240086Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T09:29:28.240105Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T09:29:28.240109Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T09:29:50.130882Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T09:29:50.131012Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T09:29:50.131038Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T09:29:50.165041Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T09:29:50.165064Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T09:29:50.628441Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T09:29:50.628500Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T09:29:50.628552Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T09:29:50.628834Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T09:29:50.628850Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T09:29:50.628855Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:29:50.629593Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:29:50.629785Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:29:50.629971Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:29:50.630010Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T09:29:50.630794Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T09:29:50.631027Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T09:29:50.632976Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T09:29:50.633349Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T09:29:50.633375Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T10:00:30.191280Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T10:00:30.191326Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T10:00:30.191540Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T10:00:30.191561Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T10:00:30.191565Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T10:00:33.995780Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T10:00:33.995943Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T10:00:33.995981Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T10:00:34.032471Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T10:00:34.032492Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T10:00:34.495784Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T10:00:34.495846Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T10:00:34.495908Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T10:00:34.496217Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T10:00:34.496236Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T10:00:34.496241Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:00:34.496957Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:00:34.497136Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:00:34.497312Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:00:34.497348Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:00:34.498089Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T10:00:34.498309Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T10:00:34.500065Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T10:00:34.500458Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T10:00:34.500483Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T10:28:41.389880Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T10:28:41.389941Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T10:28:41.390109Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T10:28:41.390119Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T10:28:41.390122Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T10:28:50.049879Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T10:28:50.050004Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T10:28:50.050024Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T10:28:50.084390Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T10:28:50.084411Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T10:28:50.608948Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T10:28:50.609019Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T10:28:50.609071Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T10:28:50.609339Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T10:28:50.609355Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T10:28:50.609360Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:28:50.610137Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:28:50.610302Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:28:50.610475Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:28:50.610536Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:28:50.611252Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T10:28:50.611755Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T10:28:50.612478Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T10:28:50.612779Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T10:28:50.612800Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T10:34:03.073510Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T10:34:03.073548Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T10:34:03.073703Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T10:34:03.073718Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T10:34:03.073721Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T10:59:48.104429Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T10:59:48.104570Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T10:59:48.104600Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T10:59:48.135216Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T10:59:48.135236Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T10:59:48.692424Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T10:59:48.692487Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T10:59:48.692546Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T10:59:48.692812Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T10:59:48.692829Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T10:59:48.692834Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:59:48.693552Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:59:48.693724Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:59:48.693899Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:59:48.694253Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T10:59:48.695078Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T10:59:48.695290Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T10:59:48.695929Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T10:59:48.696068Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T10:59:48.696159Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T12:03:23.889242Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T12:03:23.889291Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T12:03:23.889452Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T12:03:23.889460Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T12:03:23.889464Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T12:04:46.355543Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T12:04:46.355691Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T12:04:46.355723Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T12:04:46.388451Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T12:04:46.388472Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T12:04:46.914725Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T12:04:46.914780Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T12:04:46.914835Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T12:04:46.915111Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T12:04:46.915127Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T12:04:46.915132Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T12:04:46.916228Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T12:04:46.916433Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T12:04:46.916662Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T12:04:46.916710Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T12:04:46.917847Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T12:04:46.918093Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T12:04:46.920103Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T12:04:46.921451Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T12:04:46.921499Z"}
+{"@level":"info","@message":"marked as sealed","@module":"core","@timestamp":"2024-02-12T12:05:40.839389Z"}
+{"@level":"info","@message":"pre-seal teardown starting","@module":"core","@timestamp":"2024-02-12T12:05:40.839425Z"}
+{"@level":"info","@message":"pre-seal teardown complete","@module":"core","@timestamp":"2024-02-12T12:05:40.839553Z"}
+{"@level":"info","@message":"stopping cluster listeners","@module":"core","@timestamp":"2024-02-12T12:05:40.839566Z"}
+{"@level":"info","@message":"forwarding rpc listeners stopped","@module":"core.cluster-listener","@timestamp":"2024-02-12T12:05:40.839569Z"}
+{"@level":"info","@message":"proxy environment","@timestamp":"2024-02-12T14:21:36.081588Z","http_proxy":"","https_proxy":"","no_proxy":""}
+{"@level":"info","@message":"incrementing seal generation","@timestamp":"2024-02-12T14:21:36.082253Z","generation":1}
+{"@level":"warn","@message":"no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set","@timestamp":"2024-02-12T14:21:36.082276Z"}
+{"@level":"info","@message":"Initializing version history cache for core","@module":"core","@timestamp":"2024-02-12T14:21:36.320879Z"}
+{"@level":"info","@message":"Starting event system","@module":"events","@timestamp":"2024-02-12T14:21:36.320902Z"}
+{"@level":"info","@message":"starting listener","@module":"core.cluster-listener.tcp","@timestamp":"2024-02-12T14:21:36.588643Z","listener_address":{"IP":"0.0.0.0","Port":8201,"Zone":""}}
+{"@level":"info","@message":"serving cluster requests","@module":"core.cluster-listener","@timestamp":"2024-02-12T14:21:36.588707Z","cluster_listen_address":{"IP":"::","Port":8201,"Zone":""}}
+{"@level":"info","@message":"post-unseal setup starting","@module":"core","@timestamp":"2024-02-12T14:21:36.588977Z"}
+{"@level":"info","@message":"loaded wrapping token key","@module":"core","@timestamp":"2024-02-12T14:21:36.589899Z"}
+{"@level":"info","@message":"successfully setup plugin runtime catalog","@module":"core","@timestamp":"2024-02-12T14:21:36.589915Z"}
+{"@level":"info","@message":"successfully setup plugin catalog","@module":"core","@timestamp":"2024-02-12T14:21:36.589919Z","plugin-directory":""}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T14:21:36.590923Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"sys/","type":"system","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T14:21:36.591075Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"identity/","type":"identity","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T14:21:36.591761Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"secret/","type":"kv","version":"v0.16.1+builtin"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T14:21:36.591798Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"cubbyhole/","type":"cubbyhole","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"successfully mounted","@module":"core","@timestamp":"2024-02-12T14:21:36.593192Z","namespace":{"id":"root","path":"","custom_metadata":{}},"path":"token/","type":"token","version":"v1.15.4+builtin.vault"}
+{"@level":"info","@message":"restoring leases","@module":"core","@timestamp":"2024-02-12T14:21:36.593552Z"}
+{"@level":"info","@message":"usage gauge collection is disabled","@module":"core","@timestamp":"2024-02-12T14:21:36.595146Z"}
+{"@level":"info","@message":"post-unseal setup complete","@module":"core","@timestamp":"2024-02-12T14:21:36.596017Z"}
+{"@level":"info","@message":"vault is unsealed","@module":"core","@timestamp":"2024-02-12T14:21:36.596037Z"}
